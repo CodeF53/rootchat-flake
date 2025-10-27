@@ -12,8 +12,9 @@ Add to your flake inputs
 }
 ```
 
+Then add the following to either a homeManger or standard module
 <details>
-<summary>install in a standard nixOS module</summary>
+  <summary>install in a standard nixOS module</summary>
 
   ```nix
   # configuration.nix
@@ -29,7 +30,7 @@ Add to your flake inputs
   ```
 </details>
 
-<details>
+<details open>
   <summary>install in a home manager module</summary>
 
   ```nix
