@@ -7,7 +7,7 @@
 
 let
   pname = "rootchat";
-  version = "0.9.72";
+  version = "0.9.73";
   src = fetchurl {
     url = "https://installer.rootapp.com/installer/Linux/X64/Root.AppImage";
     hash = shaHash;
@@ -23,7 +23,7 @@ appimageTools.wrapType2 {
     install -Dm644 ${appimageContents}/Root.png $out/share/icons/hicolor/512x512/apps/Root.png
     substituteInPlace $out/share/applications/Root.desktop --replace 'Exec=Root' 'Exec=rootchat'
   '';
-  
+
   meta = {
     description = "Chat app for gamers";
     homepage = "https://www.rootapp.com/";
